@@ -3,18 +3,25 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
+  - Asteroid
+  - SlowRadius
+  - FastRadius
+  - Normal
+  - ReverseRadius
+  - FreezeRadius
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Asteroid
+  - Bullet
+  - Elerticity
+  - Enemy
   - 
   - 
   - 
