@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class elerticity : MonoBehaviour
 {
-    public float BulletLifetime = 2.2f;
+    public float BulletLifetime = 3.3f;
     public Rigidbody2D rb;
 
     private void Start()
     {
-        rb.AddForce(2.8f * transform.up, ForceMode2D.Impulse);
+        rb.AddForce(1.8f * transform.up, ForceMode2D.Impulse);
     }
     private void Awake()
     {

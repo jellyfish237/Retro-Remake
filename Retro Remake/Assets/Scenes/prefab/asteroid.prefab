@@ -994,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5333687814779224144
 Transform:
   m_ObjectHideFlags: 0
@@ -1802,6 +1802,7 @@ MonoBehaviour:
   elerticity_icon: {fileID: 6656181293647344848}
   elerticity: {fileID: 1372445018147016162, guid: 48d3d9d0a589dc64e8976a18f35c2569, type: 3}
   asteroid: {fileID: 6845703243050020021}
+  disabled: 0
   asteroidType: 0
 --- !u!58 &2156591728209905280
 CircleCollider2D:

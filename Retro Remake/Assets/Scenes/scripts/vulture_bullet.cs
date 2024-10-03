@@ -9,7 +9,7 @@ public class vulture_bullet : MonoBehaviour
 
     private void Start()
     {
-        rb.AddForce(15 * transform.up, ForceMode2D.Impulse);
+        rb.AddForce(26 * transform.up, ForceMode2D.Impulse);
     }
     private void Awake()
     {

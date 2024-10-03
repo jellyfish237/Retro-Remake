@@ -37,7 +37,7 @@ public class player : MonoBehaviour
     private bool Moving2 = false;
     private bool MovingBack2 = false;
     public bool can_attack = true;
-    public float attack_cooldown = 0.66f;
+    public float attack_cooldown = 0.4f;
     private State state;
     public Mode mode;
 
@@ -60,9 +60,9 @@ public class player : MonoBehaviour
         switch (state)
         {
             case State.Default:
-                Accel = 4.0f;
+                Accel = 4f;
                 MaxSpeed = 7.77f;
-                RotateSpeed = 200.0f;
+                RotateSpeed = 150.0f;
                 break;
 
             case State.Slow:
@@ -150,9 +150,9 @@ public class player : MonoBehaviour
     }
     public IEnumerator Mode2()
     {
-        attack_cooldown = 0.2f;
+        attack_cooldown = 0.5f;
         yield return new WaitForSeconds(15.0f);
-        attack_cooldown = 0.6f;
+        attack_cooldown = 0.4f;
     }
 
     public void StartCoroutine3()

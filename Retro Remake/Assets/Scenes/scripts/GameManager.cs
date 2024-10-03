@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     }
     private void SpawnEnemy()
     {
-        int enemy_chance = Random.Range(1, 300 / (1+level));
+        int enemy_chance = Random.Range(1, 250 / (1+level));
         if (enemy_chance == 1)
         {
             float offset = Random.Range(0f, 1f);
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
     }
     private void SpawnPowerUp()
     {
-        int powerup_chance = Random.Range(1, 20);
+        int powerup_chance = Random.Range(1, 40);
         if (powerup_chance == 1)
         {
             float offset = Random.Range(0f, 1f);

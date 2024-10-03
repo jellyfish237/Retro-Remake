@@ -16,7 +16,7 @@ public class powerup : MonoBehaviour
         double_points.SetActive(false);
         one.SetActive(false);
         two.SetActive(false);
-        type = Random.Range(0, 3);
+        type = Random.Range(1, 3);
         if (type == 0)
         {
             double_points.SetActive(true);
@@ -31,7 +31,7 @@ public class powerup : MonoBehaviour
         }
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         Vector2 direction = new Vector2(Random.value, Random.value).normalized;
-        float spawnSpeed = Random.Range(Random.Range(-3.0f, -2.66f), Random.Range(2.66f, 3.0f));
+        float spawnSpeed = Random.Range(Random.Range(-1.0f, -0.5f), Random.Range(0.5f, 1.0f));
         rb.AddForce(direction * spawnSpeed, ForceMode2D.Impulse);
     }
     private void OnTriggerEnter2D(Collider2D collision)
