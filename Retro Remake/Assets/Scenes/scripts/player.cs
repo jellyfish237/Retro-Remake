@@ -74,11 +74,11 @@ public class player : MonoBehaviour
             case State.Fast:
                 Accel = 20.0f;
                 MaxSpeed = 33.00f;
-                RotateSpeed = 400.0f;
+                RotateSpeed = 300.0f;
                 break;
 
             case State.Reverse:
-                RotateSpeed = -200.0f;
+                RotateSpeed = -150.0f;
                 break;
             case State.Frozen:
                 Accel = 0.0f;
@@ -150,7 +150,7 @@ public class player : MonoBehaviour
     }
     public IEnumerator Mode2()
     {
-        attack_cooldown = 0.5f;
+        attack_cooldown = 0.1f;
         yield return new WaitForSeconds(15.0f);
         attack_cooldown = 0.4f;
     }

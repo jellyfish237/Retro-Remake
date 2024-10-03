@@ -83,7 +83,9 @@ public class enemy : MonoBehaviour
         laser.SetActive(false);
         vulture_attacking = false;
         Rigidbody2D vulture_bullet = Instantiate(bulletprefab, myself.position, Quaternion.Euler(0, 0, myself.eulerAngles.z));;
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(4.0f);
+        transform.rotation = Quaternion.Euler(0, 0, Random.Range(-180f, 180f));
+        yield return new WaitForSeconds(1.0f);
         sprite_renderer.color = Color.red;
         StartCoroutine(VultureShip_Attack());
     }

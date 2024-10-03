@@ -50,7 +50,7 @@ public class Asteroid : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,0, Random.Range(-180f, 180f));
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         Vector2 direction = new Vector2(Random.value, Random.value).normalized;
-        float spawnSpeed = Random.Range(Random.Range(-3.0f/size, -2.66f/size), Random.Range(2.66f/size, 3.0f/size));
+        float spawnSpeed = Random.Range(Random.Range(-2.2f/size, -1.3f/size), Random.Range(1.3f/size, 2.2f/size));
         rb.AddForce(direction * spawnSpeed, ForceMode2D.Impulse);
         gameManager.asteroidCount++;
     }
